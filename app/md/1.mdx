@@ -1,0 +1,40 @@
+```
+title: "backend"
+```
+
+
+Welcome to the AI Assistant toolkit guide for our documentation site. Follow these steps to set up your environment and start building intelligent applications with our AI tools.
+
+## Installation
+
+To install our AI package, run the following command in your terminal:
+
+```bash
+npm install @our-company/ai-toolkit
+```
+
+## Configuration
+
+After installation, you need to set up the configuration file. Create a file named `config.js` in your project root and add the following content:
+
+```javascript
+module.exports = {
+  apiKey: 'YOUR_OPENAI_API_KEY',
+  model: 'gpt-4',
+  environment: 'production'
+}
+```
+
+## Usage
+
+Here's a basic example of how to use our AI toolkit in your project:
+
+```javascript
+import { AIClient } from '@our-company/ai-toolkit';
+
+const client = new AIClient();
+const response = await client.generateText('Write a short story about AI.');
+console.log(response);
+```
+
+For more detailed information, please check out our Components and API Reference sections.

@@ -1,0 +1,41 @@
+```
+title: "backend",
+```
+
+Welcome to the backend development toolkit guide for our documentation site. Follow these steps to set up your environment and start building robust backend services with our development tools.
+
+## Installation
+
+To install our backend package, run the following command in your terminal:
+
+```bash
+npm install @our-company/backend-framework
+```
+
+## Configuration
+
+After installation, you need to set up the configuration file. Create a file named `config.js` in your project root and add the following content:
+
+```javascript
+module.exports = {
+  databaseUrl: 'mongodb://localhost:27017/myapp',
+  port: 8080,
+  jwtSecret: 'YOUR_JWT_SECRET'
+}
+```
+
+## Usage
+
+Here's a basic example of how to use our backend framework in your project:
+
+```javascript
+import { Server } from '@our-company/backend-framework';
+
+const server = new Server();
+server.get('/api/users', (req, res) => {
+  res.json({ users: [] });
+});
+server.listen(8080);
+```
+
+For more detailed information, please check out our Components and API Reference sections.

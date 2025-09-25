@@ -1,0 +1,37 @@
+# Section 2
+
+Welcome to the blockchain integration guide for our documentation site. Follow these steps to set up your environment and start building decentralized applications with our blockchain tools.
+
+## Installation
+
+To install our blockchain package, run the following command in your terminal:
+
+```bash
+npm install @our-company/blockchain-sdk
+```
+
+## Configuration
+
+After installation, you need to set up the configuration file. Create a file named `config.js` in your project root and add the following content:
+
+```javascript
+module.exports = {
+  network: 'mainnet',
+  privateKey: 'YOUR_PRIVATE_KEY',
+  rpcUrl: 'https://mainnet.infura.io/v3/YOUR_PROJECT_ID'
+}
+```
+
+## Usage
+
+Here's a basic example of how to use our blockchain SDK in your project:
+
+```javascript
+import { BlockchainClient } from '@our-company/blockchain-sdk';
+
+const client = new BlockchainClient();
+const balance = await client.getBalance('0xYourWalletAddress');
+console.log('Balance:', balance);
+```
+
+For more detailed information, please check out our Components and API Reference sections.
